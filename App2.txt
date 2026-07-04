@@ -1,3 +1,4 @@
 This is another try in workflow
 Adding lines to check if hte workflow is triggered
 Checking for trigger again as it did not work the before time
+Again some issues in main3.yml, henc creating it
