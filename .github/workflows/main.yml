@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Read app.txt file
-        run: cat app.txt
+        run: cat App.txt
         
