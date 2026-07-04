@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - App2.txt
 jobs:
   demo-job:
     runs-on: ubuntu-latest
