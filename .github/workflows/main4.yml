@@ -1,0 +1,25 @@
+name: Push Trigger for Java related file
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - Helloworld.java
+jobs:
+  java-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        run: actions/checkout@v4
+      - name: Install Java compiler
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Check Java version installed
+        run: java -version
+      - name: Compile and Run the Java code
+        run: |
+          javac Helloworld.java
+          java Helloworld
+          
