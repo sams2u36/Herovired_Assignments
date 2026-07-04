@@ -14,4 +14,4 @@ jobs:
       - name: list files
         run: ls -ltr
       - name: open file
-        run: cat app2.txt
+        run: cat App2.txt
