@@ -1,22 +1,17 @@
-name: Push Trigger Demo
-
-  on: 
-    push:
-      branches:
-        - main
-
-  jobs:
-    demo-job:
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Checkout Repository
-          uses: actions/checkout@v4
-        - name: show message
-          run: echo "Workflow Started"
-
-        - name: List files
-          run: ls -ltr
-
-        - name: Open file
-          run: cat App2.txt
+name: push trigger demo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: show message
+        run: echo "workflow started"
+      - name: list files
+        run: ls -ltr
+      - name: open file
+        run: cat app2.txt
