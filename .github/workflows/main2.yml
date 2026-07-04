@@ -1,0 +1,22 @@
+name: Python Install demo
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  python-demo:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Install Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-verion: '3.11"
+      - name: check python version
+        run: python --version
+      - name: Run Python File
+         run: python herodemo_Jul426.py
+         
