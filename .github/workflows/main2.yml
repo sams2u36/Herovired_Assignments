@@ -18,5 +18,5 @@ jobs:
       - name: check python version
         run: python --version
       - name: Run Python File
-         run: python herodemo_Jul426.py
+        run: python herodemo_Jul426.py
          
